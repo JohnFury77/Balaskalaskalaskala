@@ -11,6 +11,13 @@ namespace Balaskalaskalaskala
         static void Main(string[] args)
         {
             //mindent megváltoztató komment
+            Karakterek karakterekLista = new Karakterek("karakterek.txt");
+            Kiiratas(karakterekLista);
+        }
+
+        public static void Kiiratas(Karakterek karakterekLista)
+        {
+            
         }
     }
 }

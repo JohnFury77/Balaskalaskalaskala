@@ -13,16 +13,24 @@ namespace Balaskalaskalaskala
 
         public Karakterek(string fajlNev)
         {
-            karakterLista = new List<Karakter>();
+            this.karakterLista = new List<Karakter>();
             StreamReader r = new StreamReader(fajlNev);
             while (!r.EndOfStream)
             {
                 string sor = r.ReadLine();
                 string[] adatok = sor.Split(';');
-                Karakter k = new Karakter(adatok[0],int.Parse(adatok[1]));
-                karakterLista.Add(k);
+                Karakter k = new Karakter(adatok[0], int.Parse(adatok[1]));
+                this.karakterLista.Add(k);
             }
 
+        }
+
+        public List<Karakter> KarakterLista
+        {
+            get
+            {
+                return this.karakterLista;
+            }
         }
 
     }
