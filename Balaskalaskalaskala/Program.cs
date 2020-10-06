@@ -29,10 +29,12 @@ namespace Balaskalaskalaskala
 
         public static void Kiiratas(Karakterek karakterekLista)
         {
-            Console.WriteLine(jatekos.ToString());
+            Console.WriteLine("#1\t"+jatekos.ToString());
+            int i = 2;
             foreach (Karakter k in karakterekLista.KarakterLista)
             {
-                Console.WriteLine(k.ToString());
+                Console.WriteLine("#{0}\t"+k.ToString(),i);
+                i++;
             }
             
         }

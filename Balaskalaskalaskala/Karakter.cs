@@ -103,7 +103,7 @@ namespace Balaskalaskalaskala
 
         public string ToString()
         {
-            return string.Format("{0,5} {1,10} {2,20}", this.nev, this.Szint, this.eletero);
+            return string.Format("{0,-40} {1,20} {2,30}", this.nev, this.Szint, this.eletero);
         }
 
     }
