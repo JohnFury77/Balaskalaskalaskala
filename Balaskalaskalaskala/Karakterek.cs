@@ -8,5 +8,12 @@ namespace Balaskalaskalaskala
 {
     class Karakterek
     {
+        List<Karakter> karakterLista;
+
+        public Karakterek(string fajlNev)
+        {
+
+        }
+
     }
 }

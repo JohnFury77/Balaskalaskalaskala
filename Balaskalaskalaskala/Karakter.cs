@@ -11,6 +11,7 @@ namespace Balaskalaskalaskala
         string nev;
         int szint;
         int tapasztalat;
+
         int eletero;
         int alapEro;
         int alapSebzes;
@@ -37,7 +38,7 @@ namespace Balaskalaskalaskala
                     break;
             }
            
-            this.eletero = eletero;
+            this.eletero = MaxEletero;
             
         }
 
