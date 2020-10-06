@@ -45,7 +45,7 @@ namespace Balaskalaskalaskala
         {
             get
             {
-                return this.alapEro + szint * 5;
+                return this.alapEletero + szint * 5;
             }
         }
 
@@ -99,6 +99,11 @@ namespace Balaskalaskalaskala
             {
                 return this.alapSebzes;
             }
+        }
+
+        public string ToString()
+        {
+            return string.Format("{0,5} {5,10} {15,20}", this.nev, this.Szint, this.tapasztalat);
         }
 
     }
