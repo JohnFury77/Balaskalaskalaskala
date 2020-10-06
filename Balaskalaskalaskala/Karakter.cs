@@ -85,6 +85,10 @@ namespace Balaskalaskalaskala
             {
                 return this.eletero;
             }
+            set
+            {
+                this.eletero = value;
+            }
         }
         public int AlapEletero
         {
@@ -100,7 +104,14 @@ namespace Balaskalaskalaskala
                 return this.alapSebzes;
             }
         }
-
+        public void Harcol(Karakter masik)
+        {
+            if (this.eletero > masik.Eletero)
+            {
+                masik.Eletero -= this.alapSebzes;
+                this.tapasztalat++;
+            }
+        }
         public string ToString()
         {
             return string.Format("{0,-40} {1,20} {2,30}", this.nev, this.Szint, this.eletero);
