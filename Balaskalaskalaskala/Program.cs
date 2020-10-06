@@ -10,7 +10,7 @@ namespace Balaskalaskalaskala
     {
         static void Main(string[] args)
         {
-
+            //mindent megváltoztató komment
         }
     }
 }
