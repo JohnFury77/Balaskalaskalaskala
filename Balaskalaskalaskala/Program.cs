@@ -10,6 +10,7 @@ namespace Balaskalaskalaskala
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
