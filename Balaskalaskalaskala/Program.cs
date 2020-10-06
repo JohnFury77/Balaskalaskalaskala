@@ -26,6 +26,7 @@ namespace Balaskalaskalaskala
 
         public static void Kiiratas(Karakterek karakterekLista)
         {
+
             
         }
     }
