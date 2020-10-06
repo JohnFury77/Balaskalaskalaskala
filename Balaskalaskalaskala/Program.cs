@@ -8,7 +8,7 @@ namespace Balaskalaskalaskala
 {
     class Program
     {
-
+        public static Karakter jatekos;
         public static char Menu()
         {
             return 'a';
@@ -19,8 +19,8 @@ namespace Balaskalaskalaskala
             string karakternev = Console.ReadLine();
             Console.WriteLine("Mi lesz a karaktered kasztja? \n1: Paladin \n2: Warrior \n3: Elf");
             int karakterkaszt = int.Parse(Console.ReadLine());
-            Karakter jatekos = new Karakter(karakternev, karakterkaszt);
-
+            jatekos = new Karakter(karakternev, karakterkaszt);
+            
             //mindent megváltoztató komment
             Karakterek karakterekLista = new Karakterek("karakterek.txt");
             Kiiratas(karakterekLista);
@@ -29,7 +29,11 @@ namespace Balaskalaskalaskala
 
         public static void Kiiratas(Karakterek karakterekLista)
         {
-
+            Console.WriteLine(jatekos.ToString());
+            foreach (Karakter k in karakterekLista.KarakterLista)
+            {
+                Console.WriteLine(k.ToString());
+            }
             
         }
     }
